@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *arq1000;
+    int i;
+    float num, maior;
+
+    printf("\nDigite 1000 numeros\n");
+    scanf("%f", &num);
+    maior = num;
+    for (i=1; i <= 9; i++){
+        scanf("%f", &num);
+        if (num > maior){
+            maior = num;
+        }
+    }
+    printf("\nO maior numero e %.3f", maior);
+    return 0;
+}
